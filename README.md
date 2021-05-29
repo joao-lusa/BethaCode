@@ -1,6 +1,6 @@
 # BethaCode
 
-Começou hoje dia 29/05/2021 o curso da Betha sistemas BethaCode 
+Começou hoje dia 29/05/2021 o curso da Betha sistemas, BethaCode 
 
 fiquei muito feliz quando soube que fui aprovado, e estou me empenhando muito para mostrar o meu melhor🤩🤓👨‍💻
 
