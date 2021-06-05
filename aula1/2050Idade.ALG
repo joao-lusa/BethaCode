@@ -11,12 +11,15 @@ AnoNascimento, Idade : inteiro
 
 
 Inicio
-// Seção de Comandos, procedimento, funções, operadores, etc... 
+// Seção de Comandos, procedimento, funções, operadores, etc...
+escreva("Escreva seu nome: ")
+leia(Nome)
 escreva("digite o ano em que você nasceu: ")
 leia(AnoNascimento)
 
+
 Idade <- 2050 - AnoNascimento
 
-escreva("sua idade em 2050 é: ", Idade)
+escreva("ola ", nome, " sua idade em 2050 é: ",Idade)
 
 Fimalgoritmo

@@ -15,7 +15,7 @@ Inicio
 escreva("digite o valor em KM para ser convertido para metos :")
 leia(KM)
 
-Metros <- KM / 1000
-escreval(Metros,"M")
+Metros <- KM * 1000
+escreval(KM, " Km(s) equivalem", Metros," metros")
 
 Fimalgoritmo
