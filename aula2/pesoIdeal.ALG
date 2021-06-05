@@ -16,9 +16,9 @@ leia(altura)
 escreva("informa seu sexo 'm' para masculino 'f' para feminino: ")
 leia(sexo)
 
-se sexo = "m" entao
+se (sexo = "m") ou (sexo = "M") entao
    pesoIdeal <- (altura*72.7) - 58
-senao sexo = "f" entao
+senao (sexo = "f") ou (sexo = "F") entao
      pesoIdeal <- (altura*62.1) - 44.7
 senao
 escrava("sexo não encontrado")
