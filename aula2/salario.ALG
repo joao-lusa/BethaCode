@@ -13,12 +13,13 @@ Inicio
 escreva("por favor, informar salario: R$")
 leia (salario)
 se salario >= 3000.00 então
-   salarioF <- salario/1.15
+   salarioF <- (salario*0.15)
    escreva("seu salario de ", salario, " deve ser pago 15% de imposto, que ficara", salarioF)
 senão
-     salarioF <- salario/1.02
+     salarioF <- (salario*0.02)
      escreva("seu salario de ", salario, " deve ser pago 2% de imposto, que ficara", salarioF)
 fimse
+
 
 
 Fimalgoritmo
