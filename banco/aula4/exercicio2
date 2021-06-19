@@ -1,0 +1,17 @@
+--exercicio 2 
+SELECT * FROM atividades 
+
+CREATE TABLE empresas(
+	i_empressa serial,
+	nome VARCHAR(100) NOT NULL, 
+	nome_fantasia VARCHAR(100) NOT NULL,
+	funcionario INTEGER CHECK(funcionario>0),
+	atividade INTEGER REFERENCES atividades(i_atividade),
+	
+	PRIMARY KEY(i_empressa)
+);
+
+SELECT * FROM empresas 
+
+INSERT INTO empresas(nome, nome_fantasia, funcionario, atividade)
+VALUES('João Lucas', 'JaoLuska', 1, 1);
