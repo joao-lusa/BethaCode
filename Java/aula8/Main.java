@@ -12,7 +12,7 @@ public class Main {
 		
 		do {
 			System.out.println("-------------------------------------------------");
-			System.out.println("escolha a operação a ser realiada caso deseja parar digite 0 !!");
+			System.out.println("escolha a operação a ser realiada, caso deseja parar digite 0 !!");
 			System.out.println("1 - tipo do animal ");
 			System.out.println("2 - dar um nome ao animal ");
 			System.out.println("3 - mostrar animal ");
@@ -28,7 +28,7 @@ public class Main {
 					String tipo = sc.next();
 					animal.tipo = tipo;
 				break;
-				
+	
 				case 2:
 					System.out.print("digite o nome do animal: ");
 					String nome = sc.next();

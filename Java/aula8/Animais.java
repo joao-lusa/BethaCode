@@ -18,6 +18,7 @@ public class Animais {
 	public void dormir() {
 		if(alimentado) {
 			dormindo = true;
+			alimentado = false;
 			System.out.println("animal: " + nome +  " está dormindo");
 		}else {
 			System.out.println("animal: " + nome + " tem que ser alimentado");
@@ -25,6 +26,6 @@ public class Animais {
 	}
 	
 	public void mostrar() {
-		System.out.println("O " + tipo + nome + " foi alimentado " + alimentado + " e ja foi dormir " + dormindo);
+		System.out.println("O " + tipo + " "+ nome + " foi alimentado " + (alimentado ? "SIM" : "NÃO")+ "," + " e ja foi dormir " + (dormindo ? "SIM" : "NÃO"));
 	}
 }
