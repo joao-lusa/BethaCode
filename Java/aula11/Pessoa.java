@@ -15,4 +15,8 @@ public class Pessoa {
 		return this.codigo;
 	}
 	
+	public String toString() {
+		return "Codigo: " + this.codigo + " nome: " + this.nome + " endereco: " + this.endereco;
+	}
+	
 }

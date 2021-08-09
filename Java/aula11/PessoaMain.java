@@ -32,11 +32,15 @@ public class PessoaMain {
 					listaDePessoas.add(pessoa);
 				break;
 				case 2:
-					System.out.print("Quem deve ser excluida(o):");
+					System.out.print("Codigo da pessoa que deve ser excluida(o):");
 					int codRemovido = sc.nextInt();
 					listaDePessoas.removeIf(talPessoa -> talPessoa.getCodigo() == codRemovido);
 				break;
-				
+				case 3:
+					for (Pessoa mostraPessoa : listaDePessoas) {
+						System.out.println(mostraPessoa);
+					}
+				break;
 				default:
 					System.out.println("Opção não existe!!");
 				break;
