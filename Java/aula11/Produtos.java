@@ -19,4 +19,13 @@ public class Produtos {
 	public int getCodigo() {
 		return this.codigo;
 	}
+	
+	public void alteraValor(double novoValor) {
+		this.valor = novoValor;
+	}
+	
+	@Override
+	public String toString() {
+		return "Codigo: " + this.codigo + " Descrição: " + this.descricao + " Valor R$: " + this.valor;
+	}
 }

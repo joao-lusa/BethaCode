@@ -30,11 +30,11 @@ public class ProdutosMain {
 		
 
 		//RemoveIf usa expressão lambda para remover objetos conforme a condição
-		//listaDeProdutos.removeIf(produto -> produto.getValor() > 5000);
+		listaDeProdutos.removeIf(produto -> produto.getValor() > 5000);
 
 		//For na lista de produtos
 		for (Produtos nomeQualquer : listaDeProdutos) {
-			nomeQualquer.alteraValor(nomeQualquer.getValor() + 10);
+			//nomeQualquer.alteraValor(nomeQualquer.getValor() + 10);
 			System.out.println(nomeQualquer);
 		}
 		
