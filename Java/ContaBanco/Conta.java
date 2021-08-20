@@ -10,7 +10,8 @@ public class Conta {
 	private String numero;
 	private double saldo;
 
-	public Conta(String correntista, String numero) {
+	public Conta(String correntista, String numero, double saldo) {
+		this.saldo = saldo;
 		this.correntista = correntista;
 		this.numero = numero;
 	}
@@ -32,17 +33,12 @@ public class Conta {
 	
 	public void depositar() {
 		System.out.print("Informe o valor do deposito: ");
-		saldo += sc.nextDouble();
-		
+		this.saldo += sc.nextDouble();
 		System.out.println("depositado com sucesso. ");
 	}
 	
 	public void MostrarDados() {
-		System.out.println("Correntista: " + correntista + ", Numero: " + numero + ", Saldo: " + saldo);
-	}
-	
-public Conta(){
-		
+		System.out.println("Correntista: " + correntista + ", Numero: " + numero + ", Saldo: " + this.saldo);
 	}
 	
 	public String getCorrentista() {
