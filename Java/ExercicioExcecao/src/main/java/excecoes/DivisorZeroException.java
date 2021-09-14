@@ -1,4 +1,4 @@
-package execao;
+package excecoes;
 
 public class DivisorZeroException extends ArithmeticException{
     @Override

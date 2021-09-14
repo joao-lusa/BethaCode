@@ -1,5 +1,5 @@
 package model;
-import execao.DivisorZeroException;
+import excecoes.DivisorZeroException;
 
 public class CalculoMatematico {
 

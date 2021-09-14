@@ -1,7 +1,7 @@
 package aplicacao;
 import java.util.Scanner;
 import model.CalculoMatematico;
-import execao.DivisorZeroException;
+import excecoes.DivisorZeroException;
 
 
 public class MainExecoes {
