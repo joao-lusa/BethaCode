@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ee674dfe-a7e4-472c-8272-49470e904423" name="Default Changelist" comment="montando uma interação com o usuário">
-      <change beforePath="$PROJECT_DIR$/src/main/java/aplicacao/BethaCodeApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/aplicacao/BethaCodeApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/aplicacao/BethaCodeApp.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/aplicacao/BethaCodeApp.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
