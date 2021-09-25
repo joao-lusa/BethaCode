@@ -1,5 +1,6 @@
 package aplicacao;
 
+import modelo.Livro;
 import modelo.Tipo;
 
 import javax.persistence.EntityManager;
@@ -11,7 +12,7 @@ public class LivrosApp {
         EntityManagerFactory fabricaGerenciadorEntidades = Persistence.createEntityManagerFactory("minhaConexao");
         EntityManager geranciadorEntidades = fabricaGerenciadorEntidades.createEntityManager();
 
-            //insersao de dados
+        //insersao de dados
 
 //        Tipo tipo1 = new Tipo();
 //        tipo1.setDescricao("Romance");
@@ -54,9 +55,21 @@ public class LivrosApp {
 //        geranciadorEntidades.getTransaction().begin();
 //        geranciadorEntidades.remove(tipoExcluir);
 //        geranciadorEntidades.getTransaction().commit();
-//
 //        geranciadorEntidades.close();
 //        fabricaGerenciadorEntidades.close();
+
+        Tipo tipoCadastrado = geranciadorEntidades.find(Tipo.class, 2);
+        Livro livro1 = new Livro();
+        livro1.setTitulo("Harrey Potter e a Pedra Filosofal");
+        livro1.setAutor("JK Rowling");
+        livro1.setTipo(tipoCadastrado);
+
+        geranciadorEntidades.getTransaction().begin();
+        geranciadorEntidades.persist(livro1);
+        geranciadorEntidades.getTransaction().commit();
+
+        geranciadorEntidades.close();
+        fabricaGerenciadorEntidades.close();
 
 
 
