@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03f1d351-77ef-4d59-86ca-5dbefba383bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Execoes/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Execoes/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Execoes/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../aula17/alunosJBDC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../aula17/alunosJBDC/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,7 +21,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../aula17/alunosJBDC" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
