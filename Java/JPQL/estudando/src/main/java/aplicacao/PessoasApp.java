@@ -23,18 +23,20 @@ public class PessoasApp {
 //        }
 
         //fazendo uma consulta na tabela cidade pelo id
-        String jpql = "select c from Cidade c where id = :id";
-        int id = 2;
+//        String jpql = "select c from Cidade c where id = :id";
+//        int id = 2;
+//
+//        TypedQuery<Cidade> typedQuery = entityManager.createQuery(jpql, Cidade.class).setParameter("id", id);
+//        List<Cidade> listaCidade = typedQuery.getResultList();
+//
+//        for(Cidade cidade: listaCidade) {
+//            System.out.println(cidade.getNome());
+//        }
+//
+//        entityManager.close();
+//        entityManagerFactory.close();
 
-        TypedQuery<Cidade> typedQuery = entityManager.createQuery(jpql, Cidade.class).setParameter("id", id);
-        List<Cidade> listaCidade = typedQuery.getResultList();
 
-        for(Cidade cidade: listaCidade) {
-            System.out.println(cidade.getNome());
-        }
-
-        entityManager.close();
-        entityManagerFactory.close();
 
     }
 }
