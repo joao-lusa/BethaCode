@@ -4,19 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f58fad5-2679-4480-a7bd-617412e254a2" name="Default Changelist" comment="crud finalizado">
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/java/aplicacao/LivrosApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/java/modelo/Livro.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/java/modelo/Tipo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/resources/META-INF/persistence.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6f58fad5-2679-4480-a7bd-617412e254a2" name="Default Changelist" comment="crud finalizado" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
