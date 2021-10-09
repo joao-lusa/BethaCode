@@ -5,16 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6f58fad5-2679-4480-a7bd-617412e254a2" name="Default Changelist" comment="crud finalizado">
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/.idea/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/src/main/java/aplicacao/PessoasApp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/src/main/java/modelo/Cidade.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/src/main/java/modelo/Pessoa.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../ExercicioJPA/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/java/aplicacao/LivrosApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/java/modelo/Livro.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/java/modelo/Tipo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/JPQL/src/main/resources/META-INF/persistence.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -44,6 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RunManager">
     <configuration name="LivrosApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
@@ -108,6 +109,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit" />
