@@ -4,7 +4,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6f58fad5-2679-4480-a7bd-617412e254a2" name="Default Changelist" comment="crud finalizado" />
+    <list default="true" id="6f58fad5-2679-4480-a7bd-617412e254a2" name="Default Changelist" comment="crud finalizado">
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/src/main/java/aplicacao/PessoasApp.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/src/main/java/modelo/Cidade.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/src/main/java/modelo/Pessoa.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula19/ExercicioJPQL/src/main/resources/META-INF/persistence.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -32,7 +44,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../aula19/JPQL" />
   </component>
   <component name="RunManager">
     <configuration name="LivrosApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
