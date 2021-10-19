@@ -5,7 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfcfe29f-9096-4846-9630-78d4b563c7df" name="Default Changelist" comment="exemplo">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/ProjetoApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/target/classes/com/bethaCode/projeto/ProjetoApplication.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
