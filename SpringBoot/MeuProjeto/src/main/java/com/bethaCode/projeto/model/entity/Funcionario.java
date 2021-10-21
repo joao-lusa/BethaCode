@@ -4,6 +4,8 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
+import javax.validation.constraints.Min;
+import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Getter@Setter
@@ -12,18 +14,22 @@ public class Funcionario {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
 
+    @NotEmpty(message = "Deve ser informado um nome válido!")
     @Column(nullable = false, length = 100)
     private String nome;
 
+    @NotEmpty(message = "Deve ser informado um email válido!")
     @Column(nullable = false, length = 100)
     private String email;
 
     @Column(length = 100)
     private String cidade;
 
-    @Column(nullable = false,length = 14)
+    @NotEmpty(message = "Deve Ser informado um numero de telefone")
+    @Column(nullable = false,length = 10)
     private String telefone;
 
+    @NotEmpty(message = "Deve Ser informado um cpf válido")
     @Column(nullable = false, length = 11)
     private String cpf;
 

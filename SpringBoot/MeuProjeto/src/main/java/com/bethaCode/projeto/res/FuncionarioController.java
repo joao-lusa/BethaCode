@@ -30,7 +30,7 @@ public class FuncionarioController {
     public Funcionario acharPorId(@PathVariable Integer id){
         return repository
                 .findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Funcionário "+id+" Não cadastrado"));
     }
 
     @DeleteMapping("{id}")
@@ -42,7 +42,7 @@ public class FuncionarioController {
                     repository.delete(aluno);
                     return Void.TYPE;
                 })
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Funcionário "+id+" Não cadastrado"));
     }
 
     @PutMapping("{id}")
@@ -58,6 +58,6 @@ public class FuncionarioController {
                     funcionario.setCpf(funcionarioAtualizado.getCpf());
                     return repository.save(funcionario);
                 })
-                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND,"Funcionário "+id+" Não cadastrado"));
     }
 }
