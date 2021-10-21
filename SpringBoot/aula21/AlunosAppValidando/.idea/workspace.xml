@@ -4,22 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="Start aula 21">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alunos/model/entity/Diciplina.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alunos/model/repository/DisciplinaRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alunos/rest/ApplicationControllerAdvice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alunos/rest/DisciplinaController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/alunos/rest/exception/ApiErrors.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../aula20/AlunosApp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../aula20/AlunosApp/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alunos/model/entity/Aluno.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alunos/model/entity/Aluno.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alunos/model/repository/AlunoRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alunos/model/repository/AlunoRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alunos/rest/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alunos/rest/AlunoController.java" afterDir="false" />
-    </list>
+    <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="criando post diciplina" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -35,6 +20,14 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1znU6QIuTjRxahbVSJsOZ9a2dbm" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
@@ -89,7 +82,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634783295528</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="criando post diciplina">
+      <created>1634787813993</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1634787813993</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -105,6 +105,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Start aula 21" />
-    <option name="LAST_COMMIT_MESSAGE" value="Start aula 21" />
+    <MESSAGE value="criando post diciplina" />
+    <option name="LAST_COMMIT_MESSAGE" value="criando post diciplina" />
   </component>
 </project>
