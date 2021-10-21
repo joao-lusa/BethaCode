@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bfcfe29f-9096-4846-9630-78d4b563c7df" name="Default Changelist" comment="exemplo">
-      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/entity/Funcionario.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/repository/FuncionarioRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/res/FuncionarioController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MeuProjeto/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MeuProjeto/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MeuProjeto/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../MeuProjeto/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../MeuProjeto/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/entity/Funcionario.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
