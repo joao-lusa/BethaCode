@@ -1,7 +1,7 @@
 package alunos.rest;
 
-import com.bethaCode.alunos.model.entity.Aluno;
-import com.bethaCode.alunos.model.repository.AlunoRepository;
+import alunos.model.entity.Aluno;
+import alunos.model.repository.AlunoRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
@@ -30,7 +30,7 @@ public class AlunoController {
     public Aluno acharPorId(@PathVariable Integer id){
         return repository
                 .findById(id)
-                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Aluno"+id+" não cadastrado!"));
     }
 
     @DeleteMapping("{id}")
@@ -42,7 +42,7 @@ public class AlunoController {
                     repository.delete(aluno);
                     return Void.TYPE;
                 })
-                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+                .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND,"Aluno"+id+" não cadastrado!"));
 
     }
 
