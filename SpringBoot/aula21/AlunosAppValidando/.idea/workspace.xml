@@ -5,9 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="diciplinas criadas">
-      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/entity/Exame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/repository/ExamesRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/res/ExameController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/entity/Exame.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/model/entity/Exame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/res/ExameController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../../MeuProjeto/src/main/java/com/bethaCode/projeto/res/ExameController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
