@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="diciplinas criadas" />
+    <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="diciplinas criadas">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/alunos/rest/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alunos/rest/AlunoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/alunos/rest/AlunoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alunos/rest/AlunoController.class" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

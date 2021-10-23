@@ -49,7 +49,7 @@ public class AlunoController {
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
     public void atualizar(@PathVariable Integer id, @Valid @RequestBody Aluno AlunoAtualizado){
-        repository
+        repository 
             .findById(id)
             .map(aluno -> {
                 aluno.setNome(AlunoAtualizado.getNome());
@@ -61,7 +61,7 @@ public class AlunoController {
                 aluno.setCidade(AlunoAtualizado.getCidade());
                 aluno.setUf(AlunoAtualizado.getUf());
                 return repository;
-            }).orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND));
+            }).orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Aluno"+id+" não cadastrado!"));
     }
 
 }
