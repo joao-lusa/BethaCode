@@ -4,10 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="diciplinas criadas">
+    <list default="true" id="8173442e-3f94-4f8d-ba41-59106c7f03ce" name="Default Changelist" comment="adicionado validação no Put">
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/alunosApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/model/entity/Aluno.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/model/entity/Diciplina.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/model/repository/AlunoRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/model/repository/DisciplinaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/rest/AlunoController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/rest/ApplicationControllerAdvice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/rest/DisciplinaController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/java/alunos/rest/exception/ApiErrors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../aula22/AlunosBethaNotas/src/main/resources/application.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/alunos/rest/AlunoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/alunos/rest/AlunoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/alunos/rest/AlunoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/alunos/rest/AlunoController.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../MeuProjeto" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -100,7 +115,14 @@
       <option name="project" value="LOCAL" />
       <updated>1634836546126</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="adicionado validação no Put">
+      <created>1634994392202</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1634994392202</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -119,6 +141,7 @@
     <MESSAGE value="Start aula 21" />
     <MESSAGE value="criando post diciplina" />
     <MESSAGE value="diciplinas criadas" />
-    <option name="LAST_COMMIT_MESSAGE" value="diciplinas criadas" />
+    <MESSAGE value="adicionado validação no Put" />
+    <option name="LAST_COMMIT_MESSAGE" value="adicionado validação no Put" />
   </component>
 </project>
