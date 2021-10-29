@@ -1,6 +1,6 @@
 package alunos.rest;
 
-import alunos.model.entity.Diciplina;
+import alunos.model.entity.Disciplina;
 import alunos.model.repository.DisciplinaRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -21,12 +21,12 @@ public class DisciplinaController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.ACCEPTED)
-    public Diciplina salvar(@Valid @RequestBody Diciplina disciplina){
+    public Disciplina salvar(@Valid @RequestBody Disciplina disciplina){
         return repository.save(disciplina);
     }
 
     @GetMapping("{id}")
-    public Diciplina acharPorId(@PathVariable Integer id){
+    public Disciplina acharPorId(@PathVariable Integer id){
         return repository
                 .findById(id)
                 .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Disciplina "+id+" não cadastrada!"));
@@ -37,8 +37,8 @@ public class DisciplinaController {
     public void deletar(@PathVariable Integer id){
         repository
                 .findById(id)
-                .map(diciplina -> {
-                    repository.delete(diciplina);
+                .map(disciplina -> {
+                    repository.delete(disciplina);
                     return Void.TYPE;
                 })
                 .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Disciplina "+id+" não encontrada"));
@@ -46,13 +46,13 @@ public class DisciplinaController {
 
     @PutMapping("{id}")
     @ResponseStatus(HttpStatus.NO_CONTENT)
-    public void atualizar(@PathVariable Integer id, @Valid @RequestBody Diciplina dadoAtulizado){
+    public void atualizar(@PathVariable Integer id, @Valid @RequestBody Disciplina dadoAtulizado){
         repository
                 .findById(id)
-                .map(diciplina -> {
-                    diciplina.setDescricao(dadoAtulizado.getDescricao());
-                    diciplina.setNumeroHoras(dadoAtulizado.getNumeroHoras());
-                    return repository.save(diciplina);
+                .map(disciplina -> {
+                    disciplina.setDescricao(dadoAtulizado.getDescricao());
+                    disciplina.setNumeroHoras(dadoAtulizado.getNumeroHoras());
+                    return repository.save(disciplina);
                 })
                 .orElseThrow(()-> new ResponseStatusException(HttpStatus.NOT_FOUND, "Disciplina "+id+" não cadastrada!"));
     }

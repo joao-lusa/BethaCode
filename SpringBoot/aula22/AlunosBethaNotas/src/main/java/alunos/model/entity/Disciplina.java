@@ -10,7 +10,7 @@ import javax.validation.constraints.NotEmpty;
 
 @Entity
 @Getter@Setter
-public class Diciplina {
+public class Disciplina {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Integer id;
