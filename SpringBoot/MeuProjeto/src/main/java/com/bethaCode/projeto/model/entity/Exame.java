@@ -7,7 +7,7 @@ import javax.persistence.*;
 import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
-import javax.validation.constraints.Size;
+import java.math.BigDecimal;
 
 @Entity
 @Getter@Setter
@@ -20,13 +20,17 @@ public class Exame {
     @Column(nullable = false, length = 100)
     private String nome;
 
-    @NotNull(message = "Deve ser informado um valor válido")
-    @Column(nullable = false)
-    private Double valor;
+    @Column
+    @Min(value = 1, message = "O valor minimo a ser informado é 1")
+    private BigDecimal valor;
 
     @Column(length = 3)
     private String sigla;
 
     @Column(length = 3)
     private String jejum;
+
+    @ManyToOne
+    @NotNull(message = "Deve ser informado um funcionario para adicionar ou mudar um exame!")
+    private Funcionario funcionario;
 }
