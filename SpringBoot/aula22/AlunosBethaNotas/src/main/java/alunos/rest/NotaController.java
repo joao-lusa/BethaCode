@@ -13,6 +13,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.math.BigDecimal;
 import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
@@ -32,6 +33,8 @@ public class NotaController {
     public Nota salvar(@RequestBody NotaDTO notaDTO){
         LocalDate dataNota = LocalDate.parse(notaDTO.getDataNota(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
 
+        BigDecimal valorDaNota = bigDecimalConverter.converter(notaDTO.getNota());
+
         Integer idAluno = notaDTO.getIdAluno();
         Aluno aluno = alunoRepository
                     .findById(idAluno)
@@ -48,7 +51,7 @@ public class NotaController {
         nota.setDataNota(dataNota);
         nota.setAluno(aluno);
         nota.setDisciplina(disciplina);
-        nota.setNota(bigDecimalConverter.converter(notaDTO.getNota()));
+        nota.setNota(valorDaNota);
 
         return notaRepository.save(nota);
     }
