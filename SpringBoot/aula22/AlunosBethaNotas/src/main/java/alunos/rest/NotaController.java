@@ -82,6 +82,7 @@ public class NotaController {
     }
 
     @PutMapping("{id}")
+    @ResponseStatus(HttpStatus.NO_CONTENT)
     public void atualizar(@PathVariable Integer id, @RequestBody NotaDTO dadoAtualizado){
 
         LocalDate dataNota = LocalDate.parse(dadoAtualizado.getDataNota(), DateTimeFormatter.ofPattern("dd/MM/yyyy"));
@@ -102,7 +103,9 @@ public class NotaController {
                 .findById(id)
                 .map(nota -> {
                     nota.setDataNota(dataNota);
-                    nota.setNota(bigDecimalConverter.converter(dadoAtualizado.getNota()));
+                    BigDecimal valorDaNota = bigDecimalConverter.converter(dadoAtualizado.getNota());
+
+                    nota.setNota(valorDaNota);
                     nota.setDisciplina(disciplina);
                     nota.setAluno(aluno);
                     return notaRepository.save(nota);
