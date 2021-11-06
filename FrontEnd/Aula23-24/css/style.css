@@ -1,0 +1,23 @@
+body{
+    background-color: whitesmoke;
+    width: 80%;
+    color: blue;
+}
+h1, h3, p{
+    text-align: center;
+}
+#imgPrincipal{
+    width: 60%;
+    float: left;
+    padding-left: 4%;
+}
+#imgSecundaria{                         
+    width: 35%;
+    float: right;
+}
+.projeto{
+    text-align: left;
+}
+#fullstack{
+    width: 100%;
+}
