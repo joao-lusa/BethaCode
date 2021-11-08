@@ -1,0 +1,39 @@
+:root {
+    --effect: #1f82c5;
+    --bg: #15202b;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+body {
+    background-color: var(--bg);
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    color: #ffff;
+
+}
+table{
+    background-color: var(--effect) !important;
+}
+
+p{
+    font-size: 20px;
+}
+thead{
+    border-bottom: solid 2.2px black;
+}
+td button{
+    padding-left: 10px;
+}
