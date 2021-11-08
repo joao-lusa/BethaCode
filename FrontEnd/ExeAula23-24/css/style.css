@@ -1,6 +1,7 @@
 :root {
-    --effect: #1f82c5;
+    --effect: #1c79b8be;
     --bg: #15202b;
+    --linha: #15202b73;
 }
 
 * {
@@ -32,8 +33,11 @@ p{
     font-size: 20px;
 }
 thead{
-    border-bottom: solid 2.2px black;
+    border-bottom: solid 2.2px var(--linha) ;
 }
 td button{
     padding-left: 10px;
+}
+#imgBetha{
+    width: 15%;
 }
