@@ -21,7 +21,8 @@ function gravarCadastro(){
     }
 
     var exibir = "O aluno " + novoCadastro.nome + " foi com média " + media.toFixed(2) + " este aluno está " + status;
-    document.getElementById('exibirCalculo').innerHTML = exibir
+    //document.getElementById('exibirCalculo').innerHTML = exibir
+    document.querySelector("#exibirCalculo").textContent = exibir
 
 }
 
