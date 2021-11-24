@@ -1,0 +1,40 @@
+<h1 class="mt-4">Cadastro de um novo Exames</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Informações do Exames</li>
+</ol>
+
+<div class="container">
+    <form class="row">
+        <div class="form-group col-12">
+          <label for="nome">Nome:</label>
+          <input type="text" class="form-control" placeholder="Informe o nome" id="nome">
+        </div>
+        <div class="form-group col-12">
+          <label for="valor">Valor:</label>
+          <input type="text" class="form-control" placeholder="Informe valor do exame" id="valor">
+        </div>
+        <div class="form-group col-12">
+            <label for="sigla">Sigla:</label>
+            <input type="text" class="form-control" placeholder="Sigla do Exame 'B12'" id="sigla">
+        </div>
+        
+        <div class="com-12 m-auto">
+            <div class="form-check-inline">
+                <p class="m-auto col-auto">Jejum:</p>
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Sim
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                <input type="radio" class="form-check-input" name="optradio">Não
+                </label>
+            </div>
+        </div>
+        <div class="form-group col-12">
+            <label for="idFundionario">Funcionário:</label>
+            <input type="number" class="form-control" placeholder="Informe o Código do Funcionário" id="idFundionario">
+        </div>
+        <button type="submit" class="btn btn-primary m-3">Submit</button>
+    </form>
+</div>
