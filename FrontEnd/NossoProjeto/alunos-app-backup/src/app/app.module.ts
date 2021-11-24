@@ -7,7 +7,6 @@ import { AppComponent } from './app.component';
 import { TemplateModule } from './template/template.module';
 import { HomeComponent } from './home/home.component'
 import { AlunosModule } from './alunos/alunos.module';
-import { DisciplinasModule } from './disciplinas/disciplinas.module';
 
 @NgModule({
   declarations: [
@@ -18,8 +17,7 @@ import { DisciplinasModule } from './disciplinas/disciplinas.module';
     BrowserModule,
     AppRoutingModule,
     TemplateModule,
-    AlunosModule,
-    DisciplinasModule
+    AlunosModule
   ],
   providers: [],
   bootstrap: [AppComponent]
