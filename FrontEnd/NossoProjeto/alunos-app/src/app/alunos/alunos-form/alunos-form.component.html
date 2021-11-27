@@ -1,39 +1,90 @@
 <h1 class="mt-4">Cadastro de Alunos</h1>
 <ol class="breadcrumb mb-4">
-    <li class="breadcrumb-item active">Informações do aluno</li>
+    <li class="breadcrumb-item active">{{ aluno.id ? 'Edição' : 'cadastro'}}</li>
 </ol>
 
 <div class="container">
-    <form class="row">
-        <div class="form-group col-6">
-          <label for="nome">Nome:</label>
-          <input type="text" class="form-control" placeholder="Informe o nome" id="nome">
+    <form #alunoForm="ngForm" (ngSubmit)="gravarAluno()">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="success alert-success" role="alert" *ngIf="sucesso == true">
+                    Aluno Salvo/atualizado com Sucesso
+                </div>
+
+                <div class="alert alert-danger" role="alert" *ngFor="let erro for of errosApi">
+                   {{erro}}
+                </div>
+            </div>
         </div>
-        <div class="form-group col-6">
-          <label for="num">Telefone</label>
-          <input type="text" class="form-control" placeholder="Numero para contato" id="num">
+
+        <div class="row">
+            <div class="form-group col-3">
+                <label for="num">Id: </label>
+                <input type="text" class="form-control" disabled=true [(ngModel)]="aluno.id" name="id">
+              </div>
+            <div class="form-group col-9">
+              <label for="nome">Nome: </label>
+              <input type="text" class="form-control "[(ngModel)]="aluno.nome" name="nome">
+            </div>
         </div>
-        <div class="form-group col-6">
-            <label for="rua">Rua</label>
-            <input type="text" class="form-control" placeholder="Nome da Rua" id="rua">
+
+        <div class="row">
+            <div class="form-group col-3">
+                <label>Idade: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.idade" name="idade">
+            </div>
+            <div class="form-group col-3">
+                <label>Data da matricula: </label>
+                <input type="text" class="form-control" disabled=true [(ngModel)]="aluno.dataMatricula" name="dataMatricula">
+            </div>
+            <div class="form-group col-4">
+                <label>Numero: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.numero" name="numero">
+            </div>
         </div>
-        <div class="form-group col-6">
-            <label for="cep">CEP</label>
-            <input type="text" class="form-control" placeholder="CEP de onde mora" id="cep">
+        
+        <div class="row">
+            <div class="form-group col-9">
+                <label>rua: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.rua" name="rua">
+            </div>
+            <div class="form-group col-3">
+                <label>cep: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.cep" name="cep">
+            </div>
         </div>
-        <div class="form-group col-4">
-            <label for="bairro">Bairro</label>
-            <input type="text" class="form-control" placeholder="Bairro aonde mora" id="bairro">
+
+        <div class="row">
+            <div class="form-group col-5">
+                <label>Bairro: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.bairro" name="bairro">
+            </div>
+            <div class="form-group col-5">
+                <label>Cidade: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.id" name="idade">
+            </div>
+            <div class="form-group col-2">
+                <label>UF: </label>
+                <input type="text" class="form-control" [(ngModel)]="aluno.uf" name="uf">
+            </div>
         </div>
-        <div class="form-group col-4">
-            <label for="cidade">Cidade</label>
-            <input type="text" class="form-control" placeholder="Cidade aonde mora" id="cidade">
-        </div>
-        <div class="form-group col-4">
-            <label for="uf">UF</label>
-            <input type="text" class="form-control" placeholder="Estado ex: SC" id="uf">
-        </div>
-    
-        <button type="submit" class="btn btn-primary m-3">Submit</button>
-      </form>
+        
+    <div>
+
+    </div>
+        <button type="submit" class="btn btn-primary m-2" *ngIf="!aluno.id">
+            <i class="fa fa-save"></i>
+            salvar
+        </button>
+        <button type="submit" class="btn btn-primary m-2" *ngIf="aluno.id">
+            <i class="fa fa-sync-alt"></i>
+            Atualizar   
+        </button>
+        <button type="submit" class="btn btn-danger ml-1" (click)="volarParaListagem()">
+            <i class="fa fa-arrow-alt-circle-left"></i>
+            voltar
+        </button>
+
+    </form>
 </div>

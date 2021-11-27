@@ -8,9 +8,11 @@ import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
 import javax.validation.Valid;
+import java.util.List;
 
 @RestController
 @RequestMapping("/api/alunos")
+@CrossOrigin("http://localhost:4200")
 public class AlunoController {
 
     private final AlunoRepository repository;
@@ -31,6 +33,11 @@ public class AlunoController {
         return repository
                 .findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Aluno"+id+" não cadastrado!"));
+    }
+
+    @GetMapping
+    public List<Aluno> acharTodos(){
+        return repository.findAll();
     }
 
     @DeleteMapping("{id}")
