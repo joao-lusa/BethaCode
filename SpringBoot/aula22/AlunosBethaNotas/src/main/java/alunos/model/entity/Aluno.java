@@ -34,7 +34,7 @@ public class Aluno {
     @Column(length = 100)
     private String rua;
 
-    @Column(length = 8)
+    @Column(length = 10)
     private String cep;
 
     @Column(length = 60)
@@ -43,7 +43,7 @@ public class Aluno {
     @Column(length = 60)
     private String cidade;
 
-    @Column(length = 2)
+    @Column(length = 10)
     private String uf;
 
     @PrePersist

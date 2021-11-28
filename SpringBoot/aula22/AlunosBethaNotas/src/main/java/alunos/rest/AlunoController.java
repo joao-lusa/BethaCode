@@ -28,16 +28,16 @@ public class AlunoController {
         return repository.save(aluno);
     }
 
+    @GetMapping
+    public List<Aluno> acharTodos(){
+        return repository.findAll();
+    }
+
     @GetMapping("{id}")
     public Aluno acharPorId(@PathVariable Integer id){
         return repository
                 .findById(id)
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND,"Aluno"+id+" não cadastrado!"));
-    }
-
-    @GetMapping
-    public List<Aluno> acharTodos(){
-        return repository.findAll();
     }
 
     @DeleteMapping("{id}")
