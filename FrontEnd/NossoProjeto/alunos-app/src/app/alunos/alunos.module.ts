@@ -4,7 +4,7 @@ import { CommonModule } from '@angular/common';
 import { AlunosRoutingModule } from './alunos-routing.module';
 import { AlunosFormComponent } from './alunos-form/alunos-form.component';
 import { FormsModule } from '@angular/forms';
-import { AlunosListaComponent } from './alunos-form/alunos/alunos-lista/alunos-lista.component';
+import { AlunosListaComponent } from './alunos-lista/alunos-lista.component';
 
 
 @NgModule({

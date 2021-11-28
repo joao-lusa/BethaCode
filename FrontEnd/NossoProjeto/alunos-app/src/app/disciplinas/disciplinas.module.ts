@@ -2,16 +2,20 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { DisciplinasRoutingModule } from './disciplinas-routing.module';
-import { DiscipinasFormComponent } from './discipinas-form/discipinas-form.component';
+import { DisciplinasFormComponent } from './disciplinas-form/disciplinas-form.component';
+import { FormsModule } from '@angular/forms';
+import { DisciplinasListaComponent } from './disciplinas-lista/disciplinas-lista.component';
 
 
 @NgModule({
-  declarations: [DiscipinasFormComponent],
+  declarations: [DisciplinasFormComponent, DisciplinasListaComponent],
   imports: [
     CommonModule,
-    DisciplinasRoutingModule
-  ], exports:[
-    DiscipinasFormComponent
+    DisciplinasRoutingModule,
+    FormsModule
+  ], exports: [
+    DisciplinasFormComponent,
+    DisciplinasListaComponent
   ]
 })
 export class DisciplinasModule { }
