@@ -11,6 +11,7 @@ import { AlunosModule } from './alunos/alunos.module';
 import { AlunosService } from './alunos.service';
 import { DisciplinasModule } from './disciplinas/disciplinas.module';
 import { DisciplinasService } from './disciplinas.service';
+import { NotaModule } from './nota/nota.module';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { DisciplinasService } from './disciplinas.service';
     AppRoutingModule,
     TemplateModule,
     AlunosModule,
-    DisciplinasModule
+    DisciplinasModule,
+    NotaModule
   ],
   providers: [
     AlunosService,

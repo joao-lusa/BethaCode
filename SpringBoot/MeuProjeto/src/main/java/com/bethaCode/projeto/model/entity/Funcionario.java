@@ -4,7 +4,6 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.*;
-import javax.validation.constraints.Min;
 import javax.validation.constraints.NotEmpty;
 
 @Entity
@@ -26,11 +25,11 @@ public class Funcionario {
     private String cidade;
 
     @NotEmpty(message = "Deve Ser informado um numero de telefone")
-    @Column(nullable = false,length = 10)
+    @Column(nullable = false,length = 100)
     private String telefone;
 
     @NotEmpty(message = "Deve Ser informado um cpf válido")
-    @Column(nullable = false, length = 11)
+    @Column(nullable = false, length = 100)
     private String cpf;
 
 

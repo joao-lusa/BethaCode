@@ -11,6 +11,7 @@ import javax.validation.Valid;
 
 @RestController
 @RequestMapping("/api/funcionario")
+@CrossOrigin("http://localhost:4200")
 public class FuncionarioController {
 
     private final FuncionarioRepository repository;
