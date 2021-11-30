@@ -3,6 +3,7 @@ import { AlunosService } from 'src/app/alunos.service';
 import { Aluno } from 'src/app/alunos/aluno';
 import { DisciplinasService } from 'src/app/disciplinas.service';
 import { Disciplina } from 'src/app/disciplinas/discipliana';
+import { NotaService } from 'src/app/nota.service';
 import { Nota } from '../nota';
 
 @Component({
@@ -15,9 +16,12 @@ export class NotaFormComponent implements OnInit {
   alunos: Aluno[] = [];
   disciplinas : Disciplina[] = [];
   nota: Nota;
+  sucesso: boolean = false;
+  errosApi: String[];
 
   constructor(private servicoAluno: AlunosService,
-              private servicoDisciplina: DisciplinasService ) {
+              private servicoDisciplina: DisciplinasService,
+              private servicoNota: NotaService ) {
     this.nota = new Nota();
   }
 
@@ -36,8 +40,17 @@ export class NotaFormComponent implements OnInit {
   }
 
   gravarNota(){
-    console.log('Gravando Nota!!');
-    console.log(this.nota)
+    this.servicoNota
+      .salvar(this.nota)
+      .subscribe(respostaComSucesso => {
+        this.sucesso = true;
+        this.errosApi = null;
+        this.nota = respostaComSucesso
+      }, respostaComErro =>{
+        this.sucesso = false;
+        this.errosApi = respostaComErro.console.error.erros;
+        ;
+      })
   }
 
 }

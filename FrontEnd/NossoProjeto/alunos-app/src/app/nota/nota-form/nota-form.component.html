@@ -7,6 +7,19 @@
     <form #form='ngForm' (submit)="gravarNota()">
 
         <div class="row">
+            <div class="com-md-12">
+                <div class="alert alert-success" role="alert" *ngIf="sucesso == true">
+                    Nota Salva/Atualizada com sucesso!
+                </div>
+
+                <div class="alert alert-danger" role="alert" *ngFor="let erro of errosApi">
+                    {{ erro }}
+                </div>
+            </div>
+
+        </div>
+
+        <div class="row">
             <div class="col-md-12">
                 <div class="form-group">
                     <label>Aluno</label>
@@ -68,9 +81,12 @@
         </div>
 
         <div class="row">
-            <div class="col-md-2">
+            <div class="col-md-3">
                 <button type="submit" class="btn btn-success">
                     <i class="fa fa-save"></i>Salvar 
+                </button>
+                <button type="button" class="btn btn-danger ml-1" routerLink="/notasLita">
+                    <i class="fa fa-arrow-alt-circle-left"></i>voltar 
                 </button>
 
             </div>
