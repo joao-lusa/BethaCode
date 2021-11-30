@@ -1,1 +1,80 @@
-<p>nota-form works!</p>
+<h1 class="mt-4">Notas</h1>
+<ol class="breadcrumb mb-4">
+    <li class="breadcrumb-item active">Cadastro</li>
+</ol>
+
+<div class="container">
+    <form #form='ngForm' (submit)="gravarNota()">
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Aluno</label>
+                    <select class="form-control" 
+                            [ngModelOptions]="{standalone: true}"
+                            [(ngModel)]="nota.idAluno"
+                    >
+                        <option value="">Selecione..</option>
+                        <option *ngFor="let meuAluno of alunos" [ngValue]="meuAluno.id">
+                            {{ meuAluno.nome }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label>Disciplina</label>
+                    <select class="form-control" 
+                            [ngModelOptions]="{standalone: true}"
+                            [(ngModel)]="nota.idDisciplina"
+                    >
+                        <option value="">Selecione..</option>
+                        <option *ngFor="let minhaDisciplina of disciplinas" [ngValue]="minhaDisciplina.id">
+                            {{ minhaDisciplina.descricao }}
+                        </option>
+                    </select>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Data: </label>
+                    <input class="form-control" 
+                        [(ngModel)]="nota.dataNota"
+                        type="text"
+                        name="dataNota"
+                        id="inputDataNota"
+                    >
+
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label>Nota: </label>
+                    <input class="form-control" 
+                        [(ngModel)]="nota.nota"
+                        type="text"
+                        name="nota"
+                        id="inputDaNota"
+                    >
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <button type="submit" class="btn btn-success">
+                    <i class="fa fa-save"></i>Salvar 
+                </button>
+
+            </div>
+
+        </div>
+    </form>
+</div>

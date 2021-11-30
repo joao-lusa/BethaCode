@@ -20,6 +20,7 @@ import java.util.List;
 
 @RestController
 @RequestMapping("/api/notas")
+@CrossOrigin("http://localhost:4200")
 @RequiredArgsConstructor
 public class NotaController {
 

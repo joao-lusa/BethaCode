@@ -12,6 +12,7 @@ import { AlunosService } from './alunos.service';
 import { DisciplinasModule } from './disciplinas/disciplinas.module';
 import { DisciplinasService } from './disciplinas.service';
 import { NotaModule } from './nota/nota.module';
+import { NotaService } from './nota.service';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import { NotaModule } from './nota/nota.module';
   ],
   providers: [
     AlunosService,
-    DisciplinasService
+    DisciplinasService,
+    NotaService
   ],
   bootstrap: [AppComponent]
 })
