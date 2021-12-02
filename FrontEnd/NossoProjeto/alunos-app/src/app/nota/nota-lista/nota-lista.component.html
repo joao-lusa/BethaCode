@@ -5,10 +5,10 @@
 
 <div class="container">
 
-    <form #consultarForm="ngForm" (submit)="consultarNotas">
+    <form #consultarForm="ngForm" (submit)="consultarNotas()">
         <div class="row">
             <div class="col-md-6">
-                <label>Nome do Aluno:</label>
+                <label for="inputNome">Nome do Aluno:</label>
                 <input type="text" 
                     [(ngModel)]="nome" 
                     name="nome" 

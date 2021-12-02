@@ -22,8 +22,9 @@ export class NotaListaComponent implements OnInit {
     this.message = null;
     this.servicoDeNota
         .buscar(this.nome)
-        .subscribe(respostaComSecesso => {
-          this.listaDeNotas = respostaComSecesso;
+        .subscribe(respostaComSucesso => {
+          console.log(respostaComSucesso);
+          this.listaDeNotas = respostaComSucesso;
           if(this.listaDeNotas.length <= 0){
             this.message = "Nenhum registro foi encontrado!"
           }
